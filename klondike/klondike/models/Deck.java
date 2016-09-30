@@ -1,6 +1,7 @@
 package klondike.models;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Deck {
 	
@@ -15,6 +16,10 @@ public class Deck {
 	        this.deck.add(card);
 	      }
 	    }
+	}
+	
+	public void shuffle(){
+		Collections.shuffle(this.deck);
 	}
 
 }
