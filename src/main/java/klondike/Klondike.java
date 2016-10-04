@@ -28,6 +28,8 @@ public class Klondike {
 	private GameView gameView;
 	private IO io;
 
+	private static final int LADDERS_COUNT = 7;
+
 	public Klondike() {
 		deck = new StackDeck();
 		deck.shuffle();
@@ -36,20 +38,24 @@ public class Klondike {
 		discard = new StackCard();
 		gameView = new GameView(deck, ladders, suitStacks, discard);
 		io = new IO();
+		init();
+		play();
+	}
 
+	public void init() {
 		for (int i = 0; i < Suit.values().length; i++) {
 			StackCard suit = new StackCard();
 			suitStacks.put(Suit.values()[i], suit);
 		}
-
-		for (int i = 1; i <= 7; i++) {
-			StackLadder s = new StackLadder();
-			s.addCards(i, deck);
-			ladders.add(s);
+		for (int i = 1; i <= LADDERS_COUNT; i++) {
+			StackLadder stackLadder = new StackLadder();
+			stackLadder.addCards(i, deck);
+			ladders.add(stackLadder);
 		}
-
 		gameView.imprimirBoard();
+	}
 
+	public void play() {
 		do {
 			ok = false;
 			int opcion = io.readInt("Opcion= [1-9]:");
@@ -66,7 +72,7 @@ public class Klondike {
 			} else if (opcion == 6) {
 				new LadderToLadderController(ladders, gameView).execute();
 			} else if (opcion == 7) {
-				new SuitToLadderController(ladders, suitStacks,gameView).execute();
+				new SuitToLadderController(ladders, suitStacks, gameView).execute();
 			} else if (opcion == 8) {
 				new FlipCardController(ladders, gameView).execute();
 			}
