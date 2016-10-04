@@ -1,0 +1,146 @@
+Baraja: [X,X]
+Descarte:
+Palo BRILLO: 
+Palo TREBOL: 
+Palo PICAS: 
+Palo CORAZON: 
+Escalera1: [TEN PICAS]
+Escalera2: [][KING CORAZON]
+Escalera3: [][][ACE BRILLO]
+Escalera4: [][][][NINE PICAS]
+Escalera5: [][][][][TWO CORAZON]
+Escalera6: [][][][][][KING PICAS]
+Escalera7: [][][][][][][NINE CORAZON]
+-----------------------------
+1. Mover de baraja a descarte
+2. Mover de descarte a baraja
+3. Mover de descarte a palo
+4. Mover de descarte a escalera
+5. Mover de escalera a palo
+6. Mover de escalera a escalera
+7. Mover de palo a escalera
+8. Voltear en escalera
+9. Salir
+Opcion= [1-9]:1
+Baraja: [X,X]
+Descarte:[JACK PICAS]
+Palo BRILLO: 
+Palo TREBOL: 
+Palo PICAS: 
+Palo CORAZON: 
+Escalera1: [TEN PICAS]
+Escalera2: [][KING CORAZON]
+Escalera3: [][][ACE BRILLO]
+Escalera4: [][][][NINE PICAS]
+Escalera5: [][][][][TWO CORAZON]
+Escalera6: [][][][][][KING PICAS]
+Escalera7: [][][][][][][NINE CORAZON]
+-----------------------------
+1. Mover de baraja a descarte
+2. Mover de descarte a baraja
+3. Mover de descarte a palo
+4. Mover de descarte a escalera
+5. Mover de escalera a palo
+6. Mover de escalera a escalera
+7. Mover de palo a escalera
+8. Voltear en escalera
+9. Salir
+Opcion= [1-9]:5
+De que Escalera? [1-7]:3
+Baraja: [X,X]
+Descarte:[JACK PICAS]
+Palo BRILLO: [ACE BRILLO]
+Palo TREBOL: 
+Palo PICAS: 
+Palo CORAZON: 
+Escalera1: [TEN PICAS]
+Escalera2: [][KING CORAZON]
+Escalera3: [][]
+Escalera4: [][][][NINE PICAS]
+Escalera5: [][][][][TWO CORAZON]
+Escalera6: [][][][][][KING PICAS]
+Escalera7: [][][][][][][NINE CORAZON]
+-----------------------------
+1. Mover de baraja a descarte
+2. Mover de descarte a baraja
+3. Mover de descarte a palo
+4. Mover de descarte a escalera
+5. Mover de escalera a palo
+6. Mover de escalera a escalera
+7. Mover de palo a escalera
+8. Voltear en escalera
+9. Salir
+Opcion= [1-9]:8
+En que Escalera? [1-7]:3
+Baraja: [X,X]
+Descarte:[JACK PICAS]
+Palo BRILLO: [ACE BRILLO]
+Palo TREBOL: 
+Palo PICAS: 
+Palo CORAZON: 
+Escalera1: [TEN PICAS]
+Escalera2: [][KING CORAZON]
+Escalera3: [][FOUR TREBOL]
+Escalera4: [][][][NINE PICAS]
+Escalera5: [][][][][TWO CORAZON]
+Escalera6: [][][][][][KING PICAS]
+Escalera7: [][][][][][][NINE CORAZON]
+-----------------------------
+1. Mover de baraja a descarte
+2. Mover de descarte a baraja
+3. Mover de descarte a palo
+4. Mover de descarte a escalera
+5. Mover de escalera a palo
+6. Mover de escalera a escalera
+7. Mover de palo a escalera
+8. Voltear en escalera
+9. Salir
+Opcion= [1-9]:1
+Baraja: [X,X]
+Descarte:[JACK PICAS][THREE BRILLO]
+Palo BRILLO: [ACE BRILLO]
+Palo TREBOL: 
+Palo PICAS: 
+Palo CORAZON: 
+Escalera1: [TEN PICAS]
+Escalera2: [][KING CORAZON]
+Escalera3: [][FOUR TREBOL]
+Escalera4: [][][][NINE PICAS]
+Escalera5: [][][][][TWO CORAZON]
+Escalera6: [][][][][][KING PICAS]
+Escalera7: [][][][][][][NINE CORAZON]
+-----------------------------
+1. Mover de baraja a descarte
+2. Mover de descarte a baraja
+3. Mover de descarte a palo
+4. Mover de descarte a escalera
+5. Mover de escalera a palo
+6. Mover de escalera a escalera
+7. Mover de palo a escalera
+8. Voltear en escalera
+9. Salir
+Opcion= [1-9]:1
+Baraja: [X,X]
+Descarte:[JACK PICAS][THREE BRILLO][FIVE TREBOL]
+Palo BRILLO: [ACE BRILLO]
+Palo TREBOL: 
+Palo PICAS: 
+Palo CORAZON: 
+Escalera1: [TEN PICAS]
+Escalera2: [][KING CORAZON]
+Escalera3: [][FOUR TREBOL]
+Escalera4: [][][][NINE PICAS]
+Escalera5: [][][][][TWO CORAZON]
+Escalera6: [][][][][][KING PICAS]
+Escalera7: [][][][][][][NINE CORAZON]
+-----------------------------
+1. Mover de baraja a descarte
+2. Mover de descarte a baraja
+3. Mover de descarte a palo
+4. Mover de descarte a escalera
+5. Mover de escalera a palo
+6. Mover de escalera a escalera
+7. Mover de palo a escalera
+8. Voltear en escalera
+9. Salir
+Opcion= [1-9]:9
