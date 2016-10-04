@@ -9,7 +9,7 @@ public class Game {
 	private Hashtable<Suit, StackCard> suitStacks;
 	private StackCard discard;
 	private static final int LADDERS_COUNT = 7;
-	
+
 	public Game() {
 		deck = new StackDeck();
 		deck.shuffle();
@@ -18,7 +18,7 @@ public class Game {
 		discard = new StackCard();
 		init();
 	}
-	
+
 	public void init() {
 		for (int i = 0; i < Suit.values().length; i++) {
 			StackCard suit = new StackCard();

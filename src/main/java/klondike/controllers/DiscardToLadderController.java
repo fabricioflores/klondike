@@ -8,18 +8,18 @@ import klondike.models.StackLadder;
 import klondike.utils.IO;
 
 public class DiscardToLadderController {
-	
+
 	private StackCard discard;
 	private ArrayList<StackLadder> ladders;
 	private IO io;
-	
-	public DiscardToLadderController(StackCard discard,ArrayList<StackLadder> ladders){
-		this.discard=discard;
-		this.ladders=ladders;
+
+	public DiscardToLadderController(StackCard discard, ArrayList<StackLadder> ladders) {
+		this.discard = discard;
+		this.ladders = ladders;
 		io = new IO();
 	}
 
-	public void execute(){
+	public void execute() {
 		if (discard.getStackCard().isEmpty()) {
 			io.writeln("El descarte esta vacio");
 		} else {

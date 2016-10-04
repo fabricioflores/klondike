@@ -7,16 +7,16 @@ import klondike.models.StackLadder;
 import klondike.utils.IO;
 
 public class LadderToLadderController {
-	
+
 	private ArrayList<StackLadder> ladders;
 	private IO io;
-	
-	public LadderToLadderController(ArrayList<StackLadder> ladders){
+
+	public LadderToLadderController(ArrayList<StackLadder> ladders) {
 		this.ladders = ladders;
 		io = new IO();
 	}
-	
-	public void execute(){
+
+	public void execute() {
 		int fromLadder = io.readInt("De que Escalera? [1-7]:");
 		int howManyCards = io.readInt("Cuantas Cartas?:");
 		int toLadder = io.readInt("A que Escalera? [1-7]:");
@@ -24,7 +24,7 @@ public class LadderToLadderController {
 		StackLadder to = ladders.get(toLadder - 1);
 		int valueFromLadder = from.getStackCard().lastElement().getNumber().getCardValue() - howManyCards;
 		int valueToLadder = to.getStackCard().lastElement().getNumber().getCardValue();
-		if (valueFromLadder == valueToLadder+1) {
+		if (valueFromLadder == valueToLadder + 1) {
 			StackCard stackCard = new StackCard();
 			for (int i = 0; i < howManyCards; i++) {
 				stackCard.getStackCard().push(ladders.get(fromLadder - 1).getStackCard().pop());

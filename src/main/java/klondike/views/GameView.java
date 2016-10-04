@@ -13,12 +13,11 @@ public class GameView {
 
 	private StackDeck deck;
 	private ArrayList<StackLadder> ladders;
-	private Hashtable<Suit,StackCard> suitStacks;
+	private Hashtable<Suit, StackCard> suitStacks;
 	private StackCard discard;
 	private IO io;
 
-
-	public GameView(StackDeck deck, ArrayList<StackLadder> ladders, Hashtable<Suit,StackCard> suitStacks,
+	public GameView(StackDeck deck, ArrayList<StackLadder> ladders, Hashtable<Suit, StackCard> suitStacks,
 			StackCard discard) {
 		this.deck = deck;
 		this.ladders = ladders;
@@ -28,12 +27,11 @@ public class GameView {
 	}
 
 	public void board() {
-		if(deck.getStackCard().size()==0){
+		if (deck.getStackCard().size() == 0) {
 			io.writeln("Baraja: []");
-		}else{
+		} else {
 			io.writeln("Baraja: [X,X]");
 		}
-		
 
 		io.writeln("Descarte:" + discard.toString());
 
