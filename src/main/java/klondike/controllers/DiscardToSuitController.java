@@ -6,19 +6,16 @@ import klondike.models.Card;
 import klondike.models.StackCard;
 import klondike.models.Suit;
 import klondike.utils.IO;
-import klondike.views.GameView;
 
 public class DiscardToSuitController {
 
 	private StackCard discard;
 	private Hashtable<Suit, StackCard> suitStacks;
-	private GameView gameView;
 	private IO io;
 
-	public DiscardToSuitController(StackCard discard, Hashtable<Suit, StackCard> suitStacks, GameView gameView) {
+	public DiscardToSuitController(StackCard discard, Hashtable<Suit, StackCard> suitStacks) {
 		this.discard = discard;
 		this.suitStacks = suitStacks;
-		this.gameView = gameView;
 		io = new IO();
 	}
 
@@ -46,6 +43,5 @@ public class DiscardToSuitController {
 				}
 			}
 		}
-		gameView.imprimirBoard();
 	}
 }

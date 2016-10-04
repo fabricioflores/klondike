@@ -5,17 +5,14 @@ import java.util.ArrayList;
 import klondike.models.Card;
 import klondike.models.StackLadder;
 import klondike.utils.IO;
-import klondike.views.GameView;
 
 public class FlipCardController {
 	
 	private ArrayList<StackLadder> ladders;
-	private GameView gameView;
 	private IO io;
 	
-	public FlipCardController(ArrayList<StackLadder> ladders, GameView gameView){
+	public FlipCardController(ArrayList<StackLadder> ladders){
 		this.ladders = ladders;
-		this.gameView = gameView;
 		io = new IO();
 	}
 	
@@ -27,7 +24,6 @@ public class FlipCardController {
 		}else{
 			io.writeln("Carta ya está volteada");
 		}
-		gameView.imprimirBoard();
 	}
 
 }

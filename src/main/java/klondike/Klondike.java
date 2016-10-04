@@ -1,8 +1,5 @@
 package klondike;
 
-import java.util.ArrayList;
-import java.util.Hashtable;
-
 import klondike.controllers.DeckToDiscardController;
 import klondike.controllers.DiscardToDeckController;
 import klondike.controllers.DiscardToLadderController;
@@ -12,10 +9,6 @@ import klondike.controllers.LadderToLadderController;
 import klondike.controllers.LadderToSuitController;
 import klondike.controllers.SuitToLadderController;
 import klondike.models.Game;
-import klondike.models.StackCard;
-import klondike.models.StackDeck;
-import klondike.models.StackLadder;
-import klondike.models.Suit;
 import klondike.utils.IO;
 import klondike.views.GameView;
 
@@ -43,21 +36,31 @@ public class Klondike {
 			ok = false;
 			int opcion = io.readInt("Opcion= [1-9]:");
 			if (opcion == 1) {
-				new DeckToDiscardController(game.getDiscard(), game.getDeck(), gameView).execute();
+				new DeckToDiscardController(game.getDiscard(), game.getDeck()).execute();
+				gameView.imprimirBoard();
 			} else if (opcion == 2) {
-				new DiscardToDeckController(game.getDiscard(), game.getDeck(), gameView).execute();
+				new DiscardToDeckController(game.getDiscard(), game.getDeck()).execute();
+				gameView.imprimirBoard();
 			} else if (opcion == 3) {
-				new DiscardToSuitController(game.getDiscard(), game.getSuitStacks(), gameView).execute();
+				new DiscardToSuitController(game.getDiscard(), game.getSuitStacks()).execute();
+				gameView.imprimirBoard();
 			} else if (opcion == 4) {
-				new DiscardToLadderController(game.getDiscard(), game.getLadders(), gameView).execute();
+				new DiscardToLadderController(game.getDiscard(), game.getLadders()).execute();
+				gameView.imprimirBoard();
 			} else if (opcion == 5) {
-				new LadderToSuitController(game.getLadders(), game.getSuitStacks(), gameView).execute();
+				new LadderToSuitController(game.getLadders(), game.getSuitStacks()).execute();
+				gameView.imprimirBoard();
 			} else if (opcion == 6) {
-				new LadderToLadderController(game.getLadders(), gameView).execute();
+				new LadderToLadderController(game.getLadders()).execute();
+				gameView.imprimirBoard();
 			} else if (opcion == 7) {
-				new SuitToLadderController(game.getLadders(), game.getSuitStacks(), gameView).execute();
+				new SuitToLadderController(game.getLadders(), game.getSuitStacks()).execute();
+				gameView.imprimirBoard();
 			} else if (opcion == 8) {
-				new FlipCardController(game.getLadders(), gameView).execute();
+				new FlipCardController(game.getLadders()).execute();
+				gameView.imprimirBoard();
+			} else if (opcion == 9) {
+				System.exit(0);
 			}
 		} while (!ok);
 	}

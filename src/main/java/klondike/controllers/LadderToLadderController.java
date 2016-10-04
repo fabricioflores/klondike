@@ -5,17 +5,14 @@ import java.util.ArrayList;
 import klondike.models.StackCard;
 import klondike.models.StackLadder;
 import klondike.utils.IO;
-import klondike.views.GameView;
 
 public class LadderToLadderController {
 	
 	private ArrayList<StackLadder> ladders;
-	private GameView gameView;
 	private IO io;
 	
-	public LadderToLadderController(ArrayList<StackLadder> ladders, GameView gameView){
+	public LadderToLadderController(ArrayList<StackLadder> ladders){
 		this.ladders = ladders;
-		this.gameView = gameView;
 		io = new IO();
 	}
 	
@@ -35,7 +32,6 @@ public class LadderToLadderController {
 			while (stackCard.getStackCard().size() != 0) {
 				ladders.get(toLadder - 1).getStackCard().push(stackCard.getStackCard().pop());
 			}
-			gameView.imprimirBoard();
 		} else {
 			io.writeln("Selección no válida");
 		}

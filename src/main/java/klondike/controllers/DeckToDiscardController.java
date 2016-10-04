@@ -4,19 +4,16 @@ import klondike.models.Card;
 import klondike.models.StackCard;
 import klondike.models.StackDeck;
 import klondike.utils.IO;
-import klondike.views.GameView;
 
 public class DeckToDiscardController {
 
 	private StackDeck deck;
 	private StackCard discard;
-	private GameView gameView;
 	private IO io;
 
-	public DeckToDiscardController(StackCard discard, StackDeck deck, GameView gameView) {
+	public DeckToDiscardController(StackCard discard, StackDeck deck) {
 		this.discard = discard;
 		this.deck = deck;
-		this.gameView = gameView;
 		io = new IO();
 	}
 
@@ -28,6 +25,5 @@ public class DeckToDiscardController {
 			card.setHidden(false);
 			discard.getStackCard().push(card);
 		}
-		gameView.imprimirBoard();
 	}
 }

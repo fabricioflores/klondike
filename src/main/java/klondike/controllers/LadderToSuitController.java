@@ -8,19 +8,16 @@ import klondike.models.StackCard;
 import klondike.models.StackLadder;
 import klondike.models.Suit;
 import klondike.utils.IO;
-import klondike.views.GameView;
 
 public class LadderToSuitController {
 	
 	private ArrayList<StackLadder> ladders;
 	private Hashtable<Suit, StackCard> suitStacks;
-	private GameView gameView;
 	private IO io;
 	
-	public LadderToSuitController(ArrayList<StackLadder> ladders, Hashtable<Suit, StackCard> suitStacks, GameView gameView){
+	public LadderToSuitController(ArrayList<StackLadder> ladders, Hashtable<Suit, StackCard> suitStacks){
 		this.ladders = ladders;
 		this.suitStacks = suitStacks;
-		this.gameView = gameView;
 		io = new IO();
 	}
 
@@ -43,6 +40,5 @@ public class LadderToSuitController {
 				io.writeln("La carta no corresponde");
 			}
 		}
-		gameView.imprimirBoard();
 	}
 }

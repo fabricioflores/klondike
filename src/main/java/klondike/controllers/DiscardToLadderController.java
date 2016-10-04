@@ -6,19 +6,16 @@ import klondike.models.Card;
 import klondike.models.StackCard;
 import klondike.models.StackLadder;
 import klondike.utils.IO;
-import klondike.views.GameView;
 
 public class DiscardToLadderController {
 	
 	private StackCard discard;
 	private ArrayList<StackLadder> ladders;
-	private GameView gameView;
 	private IO io;
 	
-	public DiscardToLadderController(StackCard discard,ArrayList<StackLadder> ladders, GameView gameView){
+	public DiscardToLadderController(StackCard discard,ArrayList<StackLadder> ladders){
 		this.discard=discard;
 		this.ladders=ladders;
-		this.gameView = gameView;
 		io = new IO();
 	}
 
@@ -46,6 +43,5 @@ public class DiscardToLadderController {
 				}
 			}
 		}
-		gameView.imprimirBoard();
 	}
 }
